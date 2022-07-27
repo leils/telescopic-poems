@@ -1,0 +1,39 @@
+<head>
+  <!-- <script src="./lib/index.js"></script>
+  <link
+    href="./lib/index.css"
+    rel="stylesheet"
+  /> -->
+  <script src="https://unpkg.com/telescopic-text/lib/index.js"></script>
+  <link
+    href="https://unpkg.com/telescopic-text/lib/index.css"
+    rel="stylesheet"
+  />
+  <link href="./style.css" rel="stylesheet"/>
+</head>
+<body>
+  <button onClick="window.location.reload();">Reset</button>
+
+  <div id="text-container"></div>
+
+
+  <script>
+    const content = `
+    - My father's ribcage ---stands f
+    - rail
+      - irm
+    - against my arms ---
+    - weaves lines against my
+    - p
+      - c
+    - alm ---
+    - un
+      -
+    - familiar
+          `;
+    const node = createTelescopicTextFromBulletedList(content);
+    const container = document.getElementById("text-container");
+    container.appendChild(node);
+  </script>
+
+</body>

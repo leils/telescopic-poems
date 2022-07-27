@@ -1,0 +1,12 @@
+body {
+  position: fixed;
+  /* center the element */
+  right: 0;
+  left: 0;
+  margin-top: 48px;
+  margin-right: auto;
+  margin-left: auto;
+  /* give it dimensions */
+  min-height: 10em;
+  max-width: 300px;
+}

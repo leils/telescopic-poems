@@ -1,0 +1,41 @@
+<head>
+  <!-- <script src="./lib/index.js"></script>
+  <link
+    href="./lib/index.css"
+    rel="stylesheet"
+  /> -->
+  <script src="https://unpkg.com/telescopic-text/lib/index.js"></script>
+  <link
+    href="https://unpkg.com/telescopic-text/lib/index.css"
+    rel="stylesheet"
+  />
+  <link href="./style.css" rel="stylesheet"/>
+</head>
+<body>
+  <button onClick="window.location.reload();">Reset</button>
+
+  <div id="text-container"></div>
+
+
+  <script>
+    const content = `
+    - He
+    - interrupted me
+      - interrupted me (something about
+      - slumping)
+        - "put your shoulders back")
+    - mid-sentence
+      - I can't even remember what I was saying
+    - today.
+      - the last day of my trip here, the
+      - third day.
+        - third day, and it always seems to be the
+        - third day.
+          - third day. There's a magic in threes.
+          `;
+    const node = createTelescopicTextFromBulletedList(content);
+    const container = document.getElementById("text-container");
+    container.appendChild(node);
+  </script>
+
+</body>

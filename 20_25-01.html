@@ -1,0 +1,50 @@
+<head>
+  <!-- <script src="./lib/index.js"></script>
+  <link
+    href="./lib/index.css"
+    rel="stylesheet"
+  /> -->
+  <script src="https://unpkg.com/telescopic-text/lib/index.js"></script>
+  <link
+    href="https://unpkg.com/telescopic-text/lib/index.css"
+    rel="stylesheet"
+  />
+  <link href="./style.css" rel="stylesheet"/>
+</head>
+<body>
+  <button onClick="window.location.reload();">Reset</button>
+
+  <div id="text-container"></div>
+
+
+  <script>
+    const content = `
+    - Have
+      - anger
+    - you
+      - anger
+    - ever
+      - anger
+    - noticed
+      - anger
+    - the way
+      - anger
+    - words
+      - anger
+    - can
+      - anger
+    - strangle
+      - anger
+    - the breath
+      - anger
+    - out of
+      - anger
+    - the thing?
+      - anger
+          `;
+    const node = createTelescopicTextFromBulletedList(content);
+    const container = document.getElementById("text-container");
+    container.appendChild(node);
+  </script>
+
+</body>

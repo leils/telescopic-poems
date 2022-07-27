@@ -1,0 +1,133 @@
+<head>
+  <!-- <script src="./lib/index.js"></script>
+  <link
+    href="./lib/index.css"
+    rel="stylesheet"
+  /> -->
+  <script src="https://unpkg.com/telescopic-text/lib/index.js"></script>
+  <link
+    href="https://unpkg.com/telescopic-text/lib/index.css"
+    rel="stylesheet"
+  />
+  <link href="./style.css" rel="stylesheet"/>
+</head>
+<body>
+  <button onClick="window.location.reload();">Reset</button>
+
+  <div id="text-container"></div>
+
+
+  <script>
+    const content = `
+    - Retrieval-induced
+      - remember
+    - distortion;
+      - remember
+    - a phenomena
+      - remember
+    - in memory
+      - remember
+    - where
+      - remember
+    - a memory,
+      - remember
+    -  sweet or sour,
+      - remember
+    - changes
+      - remember
+    - as you
+      - remember
+    - remember it.
+      - remember
+    - ---
+    - When you
+      - remember
+    - trace
+      - remember
+    - the line
+      - remember
+    - of your memories
+      - remember
+    - Tug
+      - remember
+    - the string,
+      - remember
+    - pull them
+      - remember
+    - from
+      - remember
+    - the ether
+      - remember
+    - lay
+      - remember
+    - them out
+      - remember
+    - on the deck
+      - remember
+    - and they
+      - remember
+    - mutate,
+      - remember
+    - stretched thin
+      - remember
+    - by your
+      - remember
+    - tugging
+      - remember
+    - smudged
+      - remember
+    - with your
+      - remember
+    - fingerprints
+      - remember
+    - ---
+
+    - I remember
+      - remember
+    - a day
+      - remember
+    - as a toddler,
+      - remember
+    - a wood-burning
+      - remember
+    - stove,
+      - remember
+    - warming
+      - remember
+    - the house
+      - remember
+    - and a
+      - remember
+    - frozen
+      - remember
+    - winter
+      - remember
+    - beyond
+      - remember
+    - glass
+      - remember
+    - sliding doors.
+      - remember
+    - Only this
+      - remember
+    - memory
+      - remember
+    - reads
+      - remember
+    - back
+      - remember
+    - and forth
+      - remember
+    - from
+      - remember
+    - a VHS tape.
+      - remember
+    `;
+
+    const config = { shouldExpandOnMouseOver: true };
+    const node = createTelescopicTextFromBulletedList(content, config);
+    const container = document.getElementById("text-container");
+    container.appendChild(node);
+  </script>
+
+</body>
