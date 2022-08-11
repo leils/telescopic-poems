@@ -1,0 +1,36 @@
+<head>
+  <!-- <script src="./lib/index.js"></script>
+  <link
+    href="./lib/index.css"
+    rel="stylesheet"
+  /> -->
+  <script src="https://unpkg.com/telescopic-text/lib/index.js"></script>
+  <link
+    href="https://unpkg.com/telescopic-text/lib/index.css"
+    rel="stylesheet"
+  />
+  <link href="./style.css" rel="stylesheet"/>
+</head>
+<body>
+  <button onClick="window.location.reload();">Reset</button>
+
+  <div id="text-container"></div>
+
+
+  <script>
+    const content = `
+    - an unintentional autobiography
+    - in half-finished mugs of coffee
+      - of unclosed browser tabs
+        - of crumpled socks
+          - in cast-off jackets
+            - of dirty dishes
+              - in bookmarked pages
+                - of rustled bedsheets
+    `;
+    const node = createTelescopicTextFromBulletedList(content);
+    const container = document.getElementById("text-container");
+    container.appendChild(node);
+  </script>
+
+</body>
