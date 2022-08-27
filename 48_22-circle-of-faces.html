@@ -1,0 +1,56 @@
+<head>
+  <!-- <script src="./lib/index.js"></script>
+  <link
+    href="./lib/index.css"
+    rel="stylesheet"
+  /> -->
+  <script src="https://unpkg.com/telescopic-text/lib/index.js"></script>
+  <link
+    href="https://unpkg.com/telescopic-text/lib/index.css"
+    rel="stylesheet"
+  />
+  <link href="./style.css" rel="stylesheet"/>
+</head>
+<body>
+  <button onClick="window.location.reload();">Reset</button>
+
+  <div id="text-container"></div>
+
+
+  <script>
+    const content = `
+    - i met up with three eras
+      - Time is a circle
+    -  of
+    - friends today
+      - faces
+    - one from adolescence,
+      - my ancestral eyes
+    - two from young adulthood
+      - meeting yours
+    - and one from
+      - seeing the lines of
+    - less than
+      - your mother
+    - a year ago
+      - in your hair
+    - three lineages
+      - reading
+    - converging to
+      - the
+    - today's point
+      - descendants
+    - and moving
+      - in your
+    - unceasingly
+      - cupped
+    - into the future.
+      - palms.
+    `;
+    const config = { shouldExpandOnMouseOver: true };
+    const node = createTelescopicTextFromBulletedList(content, config);
+    const container = document.getElementById("text-container");
+    container.appendChild(node);
+  </script>
+
+</body>
